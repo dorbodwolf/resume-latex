@@ -24,6 +24,8 @@
 \RequirePackage{needspace}
 \RequirePackage[compact,small,explicit]{titlesec}
 
+% \RequirePackage{ctex}
+
 \def\scimisc@cvname{}
 \def\scimisc@cvpersonalinfo{}
 \def\cvinfosep{\hfill|\hfill{}}
@@ -49,8 +51,8 @@
   \textbf{#1}%
   \IfValueT{#2}{\hfill\textbf{#2}}%
   \IfValueT{#3}{\IfValueT{#4}{\\}}%
-  \IfValueT{#3}{\emph{#3}}%
-  \IfValueT{#4}{\hfill\emph{#4}}
+  \IfValueT{#3}{\textit{#3}}%
+  \IfValueT{#4}{\hfill\textit{#4}}
   \par\vspace{-\parskip}
 }
 

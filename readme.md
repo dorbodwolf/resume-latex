@@ -44,4 +44,14 @@
 
 配置后重启vscode后就可以在LaTeX-Workshop扩展命令工具集中看到`Recipe:xelatex`，利用这个工具编译就可以成功得到PDF文件。  
 
-5）latex-workshop.latex.recipe.default配置项设置为`lastUsed`
+5）latex-workshop.latex.recipe.default配置项设置为`lastUsed`  
+
+在编译一次后，通过command+S便可在保存时候反复编译。
+
+6) 字体设置
+
+使用xeCJK包直接指定系统字体，自己安装了思源宋体，通过`fc-list | grep 'Source'`找到自己的字体名称，填入即可。  
+```latex
+\usepackage{xeCJK}
+\setCJKmainfont{Source Han Serif SC Light}
+```
